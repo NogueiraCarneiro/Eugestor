@@ -1,0 +1,353 @@
+/* Estilos Gerais */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --container-max-width: 1200px;
+   }
+   
+   
+   body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+   }
+   
+   
+   .container {
+    width: 90%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+   }
+   
+   
+   a {
+    text-decoration: none;
+    color: var(--primary-color);
+   }
+   
+   
+   a:hover {
+    text-decoration: underline;
+   }
+   
+   
+   /* Header */
+   header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   
+   header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   
+   header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--text-color);
+   }
+   
+   
+   header nav a {
+    margin-left: 20px;
+    color: var(--text-color);
+   }
+   
+   
+   header nav a:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+   }
+   
+   
+   
+   
+   /* Hero Section */
+   .hero {
+    background: linear-gradient(to right, #f0faff, #e0f7fa);
+    padding: 80px 0;
+   }
+   
+   
+   .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   
+   
+   .hero-content {
+    flex: 1;
+    padding-right: 20px;
+   }
+   
+   
+   .hero h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+   }
+   
+   
+   .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+   }
+   
+   
+   .hero-buttons .btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+   }
+   
+   
+   .hero-buttons .btn-primary {
+    background-color: var(--primary-color);
+   }
+   
+   
+   .hero-buttons .btn-secondary {
+    background-color: var(--secondary-color);
+   }
+   
+   
+   .hero-buttons .btn:hover {
+    opacity: 0.8;
+   }
+   
+   
+   .hero-image {
+    flex: 1;
+   }
+   .hero-image img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+   }
+   
+   
+   
+   
+   /* Sobre Section */
+   .sobre {
+    padding: 60px 0;
+    background-color: #fff;
+   }
+   
+   
+   .sobre h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+   }
+   
+   
+   .sobre p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #555;
+   }
+   
+   
+   
+   
+   /* Serviços Section */
+   .servicos {
+    padding: 60px 0;
+    background-color: var(--background-color);
+   }
+   
+   
+   .servicos h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+   }
+   
+   
+   .servicos-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+   }
+   
+   
+   .servico-item {
+    background-color: #fff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+   }
+   
+   
+   .servico-item:hover {
+    transform: translateY(-5px);
+   }
+   
+   
+   .servico-item i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+   }
+   
+   
+   .servico-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+   }
+   
+   
+   .servico-item p {
+    font-size: 16px;
+    color: #555;
+   }
+   
+   
+   /* Depoimentos Section */
+   .depoimentos {
+    padding: 60px 0;
+    background-color: #fff;
+   }
+   
+   
+   .depoimentos h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+   }
+   
+   
+   /* Contato Section */
+   .contato {
+    padding: 60px 0;
+    background-color: #f0faff;
+   }
+   
+   
+   .contato h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+   }
+   
+   
+   .contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+   }
+   
+   
+   /* Footer */
+   footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+   }
+   
+   
+   /* Estilos para o carrossel de depoimentos */
+   .depoimentos-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 20px;
+    gap: 20px;
+   }
+   .depoimento-item {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 25px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    text-align: center; /* Centralizar o conteúdo */
+   }
+   .depoimento-item p {
+    font-style: italic;
+    margin-bottom: 15px;
+   }
+   .depoimento-item .autor {
+    font-weight: bold;
+    color: #555;
+   }
+   /* Esconder as barras de rolagem no depoimentos-carousel */
+   .depoimentos-carousel::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome, Safari e Opera */
+   }
+   .depoimentos-carousel {
+    -ms-overflow-style: none; /* Esconde a barra de rolagem no IE e Edge */
+    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+   }
+   
+   
+   /* Responsividade */
+   @media (max-width: 768px) {
+    header .container {
+    flex-direction: column;
+    text-align: center;
+    }
+   
+   
+    header nav {
+    margin-top: 10px;
+    }
+    header nav a {
+    margin: 0 10px;
+    }
+    .hero .container {
+    flex-direction: column;
+    text-align: center;
+    }
+    .hero-image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    }
+    .hero-content{
+    padding-right: 0;
+    }
+    .hero h2 {
+    font-size: 28px;
+    }
+   
+   
+    .servicos-list{
+    grid-template-columns: 1fr;
+    }
+    .depoimento-item {
+    width: 100%;
+    }
+    .depoimentos-carousel{
+    overflow-x: scroll;
+    }
+   }
